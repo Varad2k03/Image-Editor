@@ -7,20 +7,49 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  display: flex;
-  padding: 10px;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
   /* background: #E3F2FD; */
   background-image: url("https://images.unsplash.com/photo-1544967082-d9d25d867d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80");
+  background: linear-gradient(45deg,blue,rgb(0, 0, 0),red);
+}
+
+center{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: gold;
+  text-shadow: 0 0 10px #444343;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+center h1{
+  margin: 10px auto;
+  width: 20%;
+  border:#8c8c8c60 14px solid;
+  border-radius: 40px;
+  padding: 10px;
+  background: #00000057;
+  /* underline white */
+  text-decoration: underline;
+}
+
+.big{
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container{
   width: 850px;
   padding: 30px 35px 35px;
-  background: #fff;
+  background: #46414187;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.218);
 }
 .container.disable .editor-panel,
 .container.disable .controls .reset-filter,
@@ -32,6 +61,8 @@ body{
   margin-top: -8px;
   font-size: 22px;
   font-weight: 500;
+  color: white;
+  text-align: center;
 }
 .container .wrapper{
   display: flex;
@@ -48,17 +79,19 @@ body{
   display: block;
   font-size: 16px;
   margin-bottom: 12px;
+  color: #ffffff;
 }
 .editor-panel .options, .controls{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: #000;
 }
 .editor-panel button{
   outline: none;
   height: 40px;
   font-size: 14px;
-  color: #6C757D;
+  color: #656161;
   background: #fff;
   border-radius: 3px;
   margin-bottom: 8px;
@@ -68,7 +101,7 @@ body{
   width: calc(100% / 2 - 4px);
 }
 .editor-panel button:hover{
-  background: #f5f5f5;
+  background: #ffffff;
 }
 .filter button.active{
   color: #fff;
@@ -83,6 +116,7 @@ body{
   color: #464646;
   font-size: 14px;
   justify-content: space-between;
+  color: #fff;
 }
 .filter .slider input{
   width: 100%;
@@ -153,6 +187,25 @@ body{
 }
 
 @media screen and (max-width: 760px) {
+
+  center{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: gold;
+    text-shadow: 0 0 10px #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  center h1{
+    margin:  -10px;
+    border: none;
+    background: transparent;
+  }
   .container{
     padding: 25px;
   }
